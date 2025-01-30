@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .container {
+        border: 1px solid #007bff;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        max-width: 600px;
+        margin: 20px auto;
+      }
+      .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+      }
+    </style>
+    <title>Capybara</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">Capybara.Net</a>
+      </div>
+    </nav>
+    <div class="container">
+      <h2>Капибары</h2>
+      <p>Капибара – это грызун, обитающий в Латинской Америке, обитающий на берегах реки, озера или другого водоема. Это животное ведет полуводный образ жизни и питается растениями. Капибары очень дружественны и коммуникабельны, они живут в группах до 100 особей. Общаются и с другими животными.</p>
+    </div>
+    <div class="text-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Carpincho_en_el_Parque_Nacional_El_Palmar.jpg/640px-Carpincho_en_el_Parque_Nacional_El_Palmar.jpg" width="500" alt="Капибара в национальном парке">
+      <p></p>
+      <img src="https://static.tildacdn.com/tild3334-3565-4538-b037-396437336266/word-image-13637-8.jpg" width="500" alt="Капибара на траве">
+      <p></p>
+      <img src="https://kg-rostov.ru/upload/iblock/a14/a145090ff580e64ce93a502e34116a3d.jpg" width="500" alt="Капибара в воде">
+    </div>
+    <div class="center-content">
+      <h1>Рандомный факт о капибарах</h1>
+      <p id="fact"></p>
+      <button class="btn btn-primary" onclick="getRandomFact()">Показать рандомный факт</button>
+    </div>
+    <div class="container">
+      <h2>Капибары 2</h2>
+      <p>Капибара - самый крупный среди современных грызунов. Внешне капибара напоминает гигантскую большеголовую морскую свинку. Пальцы соединены небольшими плавательными перепонками и снабжены короткими сильными когтями. Тело покрыто длинными и жёсткими волосами; подшёрсток отсутствует. Ведёт полуводный образ жизни; от воды редко удаляется более чем на 500-1000 м. Эти грызуны обычно активны днём, но если их часто беспокоят люди и хищники, то переходят на ночной образ жизни.
+
+        Капибара прекрасно плавает и ныряет; высокое расположение на голове глаз, ушей и ноздрей позволяет ей при плавании держать их над водой.
+        
+        Капибары - социальные животные, живущие группами по 10-20 особей. Общаются эти животные при помощи свиста, щёлкающих и лающих звуков, а также запаха секрета обонятельной железы, которая расположена у самса на морде</p>
+      <img src="https://masterpiecer-images.s3.yandex.net/7d42121e85f911ee9ba9222e7fa838a6:upscaled" width="300">
+      <p></p>
+      <p></p>
+    </div>
+    <div style="text-align:center">
+      <button type="button" onclick="g()" class="btn btn-dark">можно ли завести капибару как домашние животное?</button>
+      <button type="button" onclick="gg()" class="btn btn-dark">будет ли развиваться сайт?</button>
+      
+    </div>
+    <div style="text-align:center">
+      <button type="button" onclick="q()" class="btn btn-success">создатель сайта</button>
+      <button type="button" onclick="qq()" class="btn btn-success">любимая еда капибар</button>
+      
+    </div>
+    <p></p>
+    <div style="text-align: center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSO9YpDQjULW6ybH-j7EB6lGJK1ke1otm9WQ&s" width="300">
+    </div>  
+    <p></p>
+    <script>
+      const facts = [
+        "Капибары - самые крупные грызуны в мире.",
+        "Капибары проводят большую часть времени в воде.",
+        "Капибары живут большими группами и очень социальны.",
+        "Капибары питаются различными видами растений.",
+        "Капибары могут оставаться под водой до 5 минут.",
+        "Капибары очень дружелюбны и не агрессивны по отношению к людям."
+      ];
+
+      function getRandomFact() {
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        document.getElementById("fact").textContent = facts[randomIndex];
+      }
+      function g() {
+        alert("только если у вас будет большой дом где есть огромный бассейн и всё для уюта капибар")
+      }
+      function gg() {
+        alert("конечно, мы собираемся создать самый лучший сайт про капибар в России")
+      }
+      function q() {
+        alert("CapybaraABC.NET-программист")
+      }
+      function qq() {
+        alert("Капибары – травоядные животные. Питаются травянистой растительностью, клубнями, фруктами и корой деревьев.")
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
